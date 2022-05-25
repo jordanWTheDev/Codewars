@@ -2,7 +2,6 @@
 
 // A few cases:
 
-
 // (-12, 2, -6)  ->  true
 // (-12, 2, -5)  ->  false
 
@@ -13,5 +12,5 @@
 // (15, -5, 3)   ->  true
 
 // My answer
-const isDivideBy = (num, a, b) => num % a === 0 && num % b === 0 ? true : false
-}
+const isDivideBy = (num, a, b) =>
+  num % a === 0 && num % b === 0 ? true : false;
