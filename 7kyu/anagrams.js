@@ -11,12 +11,16 @@
 
 // My answer
 
-var isAnagram = function (test, original) {
-  test = test.toLowerCase().split("").sort();
-  original = original.toLowerCase().split("").sort();
-  for (let i = 0; i < test.length; i++) {
-    if (test[i] !== original[i] || test.length !== original.length)
-      return false;
-  }
-  return true;
-};
+// var isAnagram = function (test, original) {
+//   test = test.toLowerCase().split("").sort();
+//   original = original.toLowerCase().split("").sort();
+//   for (let i = 0; i < test.length; i++) {
+//     if (test[i] !== original[i] || test.length !== original.length)
+//       return false;
+//   }
+//   return true;
+// };
+
+const isAnagram = (test, original) =>
+  test.toLowerCase().split("").sort().join("") ===
+  original.toLowerCase().split("").sort().join("");
